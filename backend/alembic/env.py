@@ -17,6 +17,7 @@ from backend.app.core.config import get_settings
 from backend.app.core.database import Base
 
 # Import all models so Alembic can detect them for autogenerate
+from backend.app.modules.identity.models import RefreshToken, User  # noqa: F401
 from backend.app.modules.institution.models import Batch, Institution  # noqa: F401
 from backend.app.modules.student.models import Student  # noqa: F401
 
