@@ -1,0 +1,58 @@
+# .gitignore — CareerOS
+
+# ── Python ─────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+
+# ── Node.js ────────────────────────────────────────────────────────
+node_modules/
+.next/
+out/
+.turbo/
+
+# ── IDE ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Environment ────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Testing ────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ── Docker ─────────────────────────────────────────────────────────
+docker-compose.override.yml
+
+# ── OS ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Terraform ──────────────────────────────────────────────────────
+*.tfstate
+*.tfstate.backup
+.terraform/
+*.tfvars
+!*.tfvars.example
+
+# ── Secrets ────────────────────────────────────────────────────────
+*.pem
+*.key
+careeros_architecture_analysis.md
